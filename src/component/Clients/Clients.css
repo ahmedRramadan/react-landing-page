@@ -1,0 +1,114 @@
+#clients{
+    padding: 10% 0;
+    position: relative;
+    font-family: var(--main-font);
+}
+#clients .background-side{
+    position: absolute;
+    right: 0;
+    width: 78vw;
+    height: 530px;
+    z-index: -1;
+    background-color: var(--bg-color);
+}
+#clients .section-tittle{
+    margin: 5% 0;
+}
+#clients .client-message {
+    height: 560px;
+    width: 100%;
+    padding-left: 30%;
+    padding-top: 20px;
+}
+#clients .client-message p{
+    padding-top: 20px;
+}
+#clients .client-message .client-logo-bg{
+    position: absolute;
+    top: 34%;
+    width: 30%;
+    opacity: 0.1;
+}
+
+.clients-description{
+    padding-left: 10%;
+}
+.clients-elements{
+    padding: 20px 0;
+}
+.client-name{
+    position: relative;
+}
+.client-name::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--turquoise-color);
+    left: -25px;
+    z-index: -1;
+    top: 5px;
+    border-radius: 100%;
+
+}
+
+@media (max-width: 1260px){
+    #clients .background-side{
+        height: 540px;
+    }
+}
+@media (max-width: 1000px){
+    #clients .client-message {
+        height: 585px;
+    }
+}
+@media (max-width: 740px){
+    #clients .client-message {
+        height: 444px;
+    }
+    #clients .client-box {
+        width: 310px;
+        height: 165px;
+    }    
+    #clients .client-message {
+        height: 480px;
+        width: 100%;
+        padding-left: 20%;
+        padding-top: 20px;
+    }
+    .client-name::after {
+        width: 15px;
+        height: 15px;
+        left: -20px;
+        top: 2px;
+    }
+    #clients .background-side {
+        height: 425px;
+    }
+}
+@media (max-width: 426px){
+    #clients .client-message {
+        height: 500px;
+    }
+    #clients .client-box {
+        width: 270px;
+        height: 160px;
+        left: 0;
+    }
+    .clients-description {
+        padding-left: 16%;
+    }
+
+}
+
+@media (max-width: 325px){
+    #clients .client-box {
+        width: 230px;
+        height: 140px;
+    }
+    #clients .client-message {
+        padding-left: 0;
+    }
+}
+
+

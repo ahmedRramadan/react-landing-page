@@ -1,0 +1,124 @@
+#projects{
+    position: relative;
+    overflow: hidden;
+    position: relative;
+}
+#projects .content{
+    padding-top: 8% ;
+    padding-bottom: 8% ;
+    opacity: 0;
+    transition: 3s ease;
+
+}
+#projects  h2{
+    color: white;
+}
+.section-tittle.slider-tittle{
+    color: var(--turquoise-color) !important;
+}
+.section-p.slider-p{
+    color: white;
+    opacity: 1;
+}
+#projects .projects-slider{
+    margin-top: 10%;
+}
+#projects .projects-slider .element{
+    display: flex;
+}
+#projects .projects-slider .element .element-details{
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+}
+.element video{
+    width: 500px;
+    height: 500px;
+    padding-top: 130px;
+    padding-left: 50px;
+}
+.swiper-pagination-bullet {
+    width: 45px !important;
+    height: 4px  !important;
+    border-radius: 0 !important;
+}
+.swiper-pagination-bullet {
+    background: var(--golden-color) !important;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+    top: 40px !important;
+    width: fit-content !important;
+    left: 30px !important;
+}
+.swiper-button-next, .swiper-button-prev {
+    top: 52px !important;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: auto !important;
+    left: 247px !important;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 25px !important;
+    color: white !important;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 0px !important;
+}
+#projects .background-turquoise-2{
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    right: 0;
+    background-color: var(--turquoise-color);
+    transition: 0.6s ease;
+    z-index: -1;
+}
+#projects .background-turquoise-2 .background-dark-2{
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    right: 0;
+    background-color: var(--start-color);
+    transition: 1s ease;
+}
+
+
+@media (max-width: 1260px){
+    .element video{
+        width: 465px;
+        height: 465px;
+    }
+    
+}
+@media (max-width: 1000px){
+    .element video {
+        width: 403px;
+        height: 403px;
+    }
+}
+@media (max-width: 740px){
+    #projects .projects-slider .element{
+        flex-direction: column;
+    }
+    .element video{
+        height: 100%;
+        width: 100%;
+        padding-top: 134px;
+        padding-left: 0;
+    }
+    #projects .projects-slider .element .element-details{
+        width: 100%;
+    }
+}
+@media (max-width: 325px){
+    .swiper-pagination-bullet {
+        width: 30px !important;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        left: 184px !important;
+    }
+}
+

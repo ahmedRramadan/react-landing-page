@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Nunito:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+:root{
+    --golden-color:#ffcf43;
+    --start-color :#050720;
+    --turquoise-color:#5DE0D8;
+    --center-circle-color:rgb(239,252,252);
+    --bg-color:rgb(239,252,252);
+    --main-font : 'Kanit', sans-serif;
+    --background-transition: 0.4s ease-out;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    /*max-width: 1500px;*/
+}
+.content {
+    padding:0 192px;
+}
+.section-tittle{
+    font-size: 60px;
+    font-family: var(--main-font);
+    font-weight: bold;
+    line-height: 60px;
+    text-transform: capitalize;
+}
+.section-p{
+    opacity: 0.6;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-size: 15px;
+    line-height: 30px;
+}
+.section-btn{
+    border:none;
+    background-color: transparent;
+    color: var(--turquoise-color);
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 18px;
+    text-align: start;
+    cursor: pointer;
+
+}
+@media (max-width: 1260px){
+    .container {
+        padding: 0;
+    }
+    .content {
+        padding:0 142px;
+    }
+    .section-tittle{
+        font-size: 50px
+    }
+
+}
+
+@media (max-width: 1000px){
+    .container {
+        padding: 0;
+    }
+    .content {
+        padding:0 85px;
+    }
+    .section-details-btn::after{
+        font-size: 21px;
+    }
+    .section-tittle {
+        font-size: 40px;
+        line-height: 45px;
+    }
+}
+
+@media (max-width: 740px){
+.container {
+        padding: 0;
+    }
+    .content {
+        padding: 0 20px;
+    }
+    .section-tittle{
+        font-size: 35px;
+        line-height: 30px;
+    }
+    .section-p {
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 325px){
+    .section-tittle{
+        font-size: 30px;
+        line-height: 32px;
+    }
+}

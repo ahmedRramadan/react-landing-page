@@ -1,0 +1,90 @@
+#whatWeDo{
+    background-color: var(--bg-color);
+    padding: 15% 0;
+}
+#whatWeDo .section-details p{
+    padding: 5% 0% 5% 30%;
+}
+#whatWeDo .section-details > button{
+    padding-left: 30%;
+}
+#whatWeDo .two-kinds{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-top: 20%;
+}
+#whatWeDo .two-kinds div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+    z-index: 1;
+}
+#whatWeDo .two-kinds .irish .irish-square,
+#whatWeDo .two-kinds .Multinational .multi-circle{
+    width: 50px;
+    height: 50px;
+    background-color: var(--golden-color);
+    position: absolute;
+    z-index: -1;
+    top: 15px;
+    left: 40px;
+    transition: 1s ease;
+    transform: scale(1);
+}
+
+
+
+#whatWeDo .two-kinds .Multinational .multi-circle{
+    background-color: var(--turquoise-color);
+    border-radius: 100%;
+}
+#whatWeDo .two-kinds .irish button{
+    color: var(--golden-color) !important;
+}
+
+
+
+@media (max-width: 1260px){
+    #whatWeDo .two-kinds .irish .irish-square,
+    #whatWeDo .two-kinds .Multinational .multi-circle{
+        top: 50px;
+    }
+}   
+@media (max-width: 1000px){
+    #whatWeDo .two-kinds .irish .irish-square,
+    #whatWeDo .two-kinds .Multinational .multi-circle{
+        width: 40px;
+        height: 40px;
+    } 
+}
+@media (max-width: 740px){
+    #whatWeDo .two-kinds{
+        flex-direction: column;
+        gap: 110px;
+        margin-top: 100px;
+    }
+    #whatWeDo .two-kinds .irish .irish-square, #whatWeDo .two-kinds .Multinational .multi-circle {
+        width: 32px;
+        height: 32px;
+        left: 79px;
+        top: 9px;
+    }
+    #whatWeDo .section-details p {
+        padding: 5% 0;
+    }
+    #whatWeDo .section-details > button{
+        padding-left: 0;
+    }
+    #whatWeDo .two-kinds div {
+        gap: 30px;
+    }
+}
+@media (max-width: 325px){
+    #whatWeDo .two-kinds div {
+        gap: 25px;
+    }
+}
+

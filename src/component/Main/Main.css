@@ -1,0 +1,492 @@
+section.main {
+    display: flex;
+    font-family: var(--main-font);
+    overflow: hidden;
+}
+section.main .main-square{
+    margin: 5vh 0;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+
+}
+/*tittle box*/
+section.main .tittle-box{
+    position: relative;
+    top: 20vh;
+    z-index: 1;
+    text-align: center;
+    opacity: 0;
+    animation:  tittle-box 2s 3.5s forwards;
+
+}
+@keyframes tittle-box{
+    to{
+        opacity: 1;
+    }
+}
+section.main .tittle-box h2{
+    position: relative;
+    font-size: 80px;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 80px;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+
+}
+
+section.main .tittle-box h2::after{
+    content: '';
+    position: absolute;
+    top: -10%;
+    width: 15%;
+    height: 2px;
+    background-color: var(--golden-color);
+    transform: scaleX(0);
+    animation:  top-line 0.5s 4.5s forwards;
+}
+@keyframes top-line{
+    to{
+        transform: scaleX(1);
+    }
+}
+section.main .tittle-box p:not(strong){
+    opacity: 0.7;
+}
+
+/*backgroun animation */
+section.main .main-square .background-animation{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height:0%;
+    background-color: #171a299a;
+    transition: var(--background-transition);
+    animation: background-animation 2s 0.5s forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes background-animation{
+    to{
+        background-color: var(--start-color);
+        height: 100%;
+    }
+}
+
+section.main .main-square .background-animation .background-circle{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform-origin: center;
+    background-color: var(--center-circle-color);
+    border-radius: 100%;
+    animation:  background-circle 1s 2.5s forwards;
+    visibility: hidden;
+
+}
+@keyframes background-circle{
+    0%{
+        visibility: visible;
+    }
+    50%{
+        visibility: visible;
+        width: 50px;
+        height: 50px;
+    }
+    99%{
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+    }
+    100%{
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+}
+.background-circle .golden-circle{
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    width: 500px;
+    height: 500px;
+    background-color: var(--golden-color);
+    border-radius: 100%;
+    transform: translateY(-50%);
+    opacity: 0;
+    animation:  golden-circle 2s 5.5s forwards;
+}
+
+@keyframes golden-circle{
+    0%{
+        opacity: 1;
+        right: 0%;
+    }
+    50%{
+        opacity: 1;
+        right:100%;
+    }
+    100%{
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        transform: translateY(0);
+        right: 0;
+        top: 0;
+        border-radius: 0;
+    }
+}
+.background-circle .golden-circle .backgound-turquoise{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--turquoise-color);
+    animation:  backgound-turquoise 1s 7.5s forwards;
+
+}
+@keyframes backgound-turquoise{
+    to{
+        height: 100%;
+    }
+
+}
+.golden-circle .backgound-turquoise .background-square{ 
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: 0;
+    background-color: var(--center-circle-color);
+    animation:  background-square 1.5s 8.5s forwards;;
+
+}
+@keyframes background-square{
+    5%{
+        height: 30%;
+    }
+    90%{
+        top: 70%;
+        height: 30%;
+        width: 20%;
+    }
+    95%{
+        width: 20%;
+        height: 30%;
+    }
+    100%{
+        width: 100.5%;
+        height: 100%;
+    }
+}
+.background-square .stable-circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-color: var(--turquoise-color);
+    opacity: 0;
+    animation:  stable-circle 1.5s 10.5s forwards;;
+
+}
+@keyframes stable-circle{
+    to{
+        opacity: 1;
+    }
+}
+
+/*left-side and right-side*/
+.left-side-text,
+.right-side-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    width: 5%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: transparent;
+    animation:  side 2s 4.5s forwards;
+}
+.right-side-text{
+    right: 0;
+}
+.left-side-text{
+    background-color: white;
+}
+.left-side-text a{
+    text-decoration: none;
+    color: black;
+}
+@keyframes side{
+    to{
+        opacity: 1;
+    }
+}
+.left-side-text button,
+.right-side-text button{
+    border: none;
+    background-color: transparent;
+    white-space: nowrap;
+    transform: rotate(90deg);
+    opacity: 0.6;
+    font-size: 18px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.right-side-text button{
+    color: var(--turquoise-color);
+    opacity: 1;
+}
+.left-side-text button::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #232a23;
+    position: absolute;
+    right: -10%;
+    animation:  left-side-arrow 0.6s forwards infinite alternate-reverse linear;
+}
+@keyframes left-side-arrow{
+    to{
+        right: -15%;
+    }
+}
+
+.social-Media-Icons{
+    list-style: none;
+}
+.social-Media-Icons li a{
+    font-size: 25px;
+    color: var(--start-color);
+    transition: 0.5s ease;
+}
+.social-Media-Icons li a:hover{
+    color: var(--turquoise-color);
+}
+/*send message styling */
+.send-message{
+    width: 100%;
+    height: 100%;
+    background-color: var(--start-color);
+    position: fixed;
+    z-index: 50;
+    padding: 5% 0;
+    overflow-y: auto !important;
+    overflow-x:hidden !important;
+}
+.send-message .close-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.send-message .close-btn span{
+    position: absolute;
+    background-color: white;
+    width: 50px;
+    height: 2px;
+
+}
+.send-message .close-btn span:first-child{
+    transform: rotate(45deg);
+}
+.send-message .close-btn span:last-child{
+    transform: rotate(320deg);
+}
+.send-message .section-tittle{
+    color: white;
+}
+ /*form styling */
+.send-message .message-form{
+    margin-top: 50px;
+}
+.send-message .message-form label:not(.checkbox-container){
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.send-message .message-form input:not(input[type='checkbox']),
+.send-message .message-form textarea{
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: var(--golden-color);
+    border-bottom-width: 1.5px;
+    outline: none;
+    margin: 0 10px;
+    padding: 40px 0 5px 10px;
+    color: white;
+    position: relative;
+}
+.send-message .message-form textarea{
+    max-width: 300px;
+    max-height: 70px;
+    min-width: 300px;
+    min-height: 70px;
+}
+
+.send-message .message-form input::placeholder,
+.send-message .message-form textarea::placeholder{
+    color: rgba(255, 255, 255, 0.418);
+    position: absolute;
+    bottom: 5px;
+    transition: 0.3s ease;
+}
+.send-message .message-form input:focus::placeholder,
+.send-message .message-form textarea:focus::placeholder{
+    bottom: 30px;
+    color: white;
+}
+.send-message .message-form span{
+    color: white;
+    font-size: 15px;
+    width: 90%;
+}
+.send-message .message-form .checkbox-container input[type='checkbox']{
+    appearance: none;
+    margin-right: 20px;
+    height: 26px;
+    width: 26px;
+    background-color: transparent;
+    border: 1px solid var(--golden-color);
+    transition: 0.5s ease;
+
+}
+.send-message .message-form .checkbox-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.send-message .message-form .checkbox-container input[type='checkbox']:checked{
+    background-color: var(--golden-color);
+}
+.send-message .message-form input[type='submit']{
+    position: relative;
+    left: 50%;
+    top: 50px;
+    transform: translateY(-50%);
+    border: none;
+    padding: 0 !important;
+    margin: 0 !important;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+.send-message .message-form input[type='submit']:hover{
+    color: var(--turquoise-color);
+}
+/* other screen */
+@media (max-width: 1260px){
+    section.main .main-square{
+        margin: 30px 0;
+        height: 810px; 
+    }
+    section.main .tittle-box h2{
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 3%;
+    }
+
+}
+@media (max-width: 1000px){
+    section.main .tittle-box h2{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .background-square .stable-circle {
+        top: 40%;
+    }
+    .send-message .message-form label:not(.checkbox-container) {
+        font-size: 18px;
+        letter-spacing: 1.5px;
+    }
+}
+@media (max-width: 740px){
+    .left-side-text button,
+    .right-side-text button,
+    .left-side-text ul{
+        visibility: hidden;
+    }
+    section.main .tittle-box {
+        top: 15vh;
+    }
+    section.main .tittle-box h2{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .background-square .stable-circle {
+        width: 200px;
+        height: 200px;
+    }
+    .send-message .message-form label:not(.checkbox-container) {
+        font-size: 15px;
+    }
+    .send-message .message-form input:not(input[type='checkbox']) {
+        margin: 0px 20px 30px 0;
+        width: 200px;
+    }
+    .send-message .message-form input:not(input[type='checkbox']), .send-message .message-form textarea {
+        padding: 10px 0 5px 0px;
+        display: block;
+    }
+    .send-message .message-form textarea {
+        min-width: 240px;
+    }
+    .send-message .message-form input:focus::placeholder,
+    .send-message .message-form textarea:focus::placeholder{
+        opacity: 0;
+    }
+    .send-message .close-btn span {
+        width: 35px;
+    }
+    .send-message .section-tittle {
+        margin-top: 50px;
+    }
+    .send-message .close-btn {
+        top: 1%;
+        right: 1%;
+    }
+    .send-message .message-form span {
+        font-size: 12px;
+    }
+    .send-message .message-form input[type='submit']{
+        left: 0 !important;
+        top: 50px;
+        transform: translateY(0) !important;
+        text-align: start;
+    }
+}
+
+
