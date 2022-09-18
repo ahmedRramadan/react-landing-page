@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/react-landing-page/static/css/main.7009e689.css",
+    "main.js": "/react-landing-page/static/js/main.8bd62f8d.js",
+    "static/media/Arkphire-rebrand.mp4": "/react-landing-page/static/media/Arkphire-rebrand.67807d8a649f460ee424.mp4",
+    "static/media/MobileTravelTrends.mp4": "/react-landing-page/static/media/MobileTravelTrends.ffd5816f179f88999cd7.mp4",
+    "static/media/Origina-brand-building.mp4": "/react-landing-page/static/media/Origina-brand-building.d5d1d9e42808772e1754.mp4",
+    "static/media/ETU-rebrand.mp4": "/react-landing-page/static/media/ETU-rebrand.6ee36c7b9a823a1f4e1f.mp4",
+    "static/media/DMA-2021_Winner-MPU.png": "/react-landing-page/static/media/DMA-2021_Winner-MPU.16a18104afa2e634fe5d.png",
+    "static/media/Best B2B WINNERS award.png": "/react-landing-page/static/media/Best B2B WINNERS award.41beca7553c780a34ccc.png",
+    "static/media/Spiders Winners Award Badges 2022 - Best B2B.png": "/react-landing-page/static/media/Spiders Winners Award Badges 2022 - Best B2B.7fb3b7c03c433f6d02cd.png",
+    "static/media/DMA-Best-agency-2019.png": "/react-landing-page/static/media/DMA-Best-agency-2019.e66c3e892b6014ddae87.png",
+    "static/media/ts-intact-logo.svg": "/react-landing-page/static/media/ts-intact-logo.5106154755de0a3ad91876bdb1cd916c.svg",
+    "static/media/ts-etu-logo.svg": "/react-landing-page/static/media/ts-etu-logo.da5ae5d39166a475826b0252f74ed684.svg",
+    "static/media/ts-travelport-logo.svg": "/react-landing-page/static/media/ts-travelport-logo.1dc4e2e82d1eb288609d5c8ae2e3ab53.svg",
+    "static/media/ts-origina-logo.svg": "/react-landing-page/static/media/ts-origina-logo.168aa34f83b001624fefda671a27a5df.svg",
+    "static/media/ts-arkfire-logo.svg": "/react-landing-page/static/media/ts-arkfire-logo.ea28641a2c98110f8fa56d301b1d6555.svg",
+    "static/media/AIM22-Shortlist-Logo.webp": "/react-landing-page/static/media/AIM22-Shortlist-Logo.3ba65c358e886682e218.webp",
+    "index.html": "/react-landing-page/index.html",
+    "main.7009e689.css.map": "/react-landing-page/static/css/main.7009e689.css.map",
+    "main.8bd62f8d.js.map": "/react-landing-page/static/js/main.8bd62f8d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7009e689.css",
+    "static/js/main.8bd62f8d.js"
+  ]
+}
